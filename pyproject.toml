@@ -1,16 +1,20 @@
 [tool.poetry]
 name = "pycsi"
 version = "0.1.0"
-description = "Tools for analysis of python code"
+description = "PyCSI - tools for the analysis of python code."
 authors = ["Gordon Greene <greeng3@obscure-reference.com>"]
-license = "CC0 1.0 Universal"
+license = "MIT"
 readme = "README.md"
+packages = [{include = "pycsi"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.3.1"
+
+[tool.poetry.scripts]
+pycsi = "pycsi.pycsi:run"
 
 [build-system]
 requires = ["poetry-core"]
