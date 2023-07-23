@@ -2,7 +2,7 @@
 
 def run():
     """The real top-level."""
-    pass
+    print('The published package runs.')
 
 if __name__ == '__main__':
     run()
