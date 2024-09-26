@@ -1,7 +1,31 @@
 # pycsi
 Tools for analysis of python code
 
-## Publishing
+
+## Cleaning
+
+```bash
+rm -rf build dist pycsi.egg-info
+```
+
+
+## Publishing with setup.py/twine
+
+###  Building
+
+```bash
+python3 setup.py sdist bdist_wheel
+```
+
+### Uploading
+
+When it asks for API token, look it up in ~/.pypirc.
+
+```bash
+twine upload dist/*
+```
+
+## FAILS - ublishing qith poetry
 
 - poetry config pypi-token.pypi your-api-token
 - poetry build

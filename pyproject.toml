@@ -8,7 +8,11 @@ readme = "README.md"
 packages = [{include = "pycsi"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.12"
+
+setuptools = "^75.1.0"
+twine = "^5.1.1"
+tomlkit = "^0.13.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.3.1"
